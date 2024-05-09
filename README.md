@@ -19,7 +19,7 @@ The system includes the following major components:
 
 ## Steps to Implement
 ### Vivado Project Setup
-1. **Clone the Repository**: `git clone [repository link]`
+1. **Clone the Repository**
 2. **Open Vivado**:
    - Load the project file
    - Ensure the Nexys board is properly connected.
