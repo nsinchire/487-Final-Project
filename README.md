@@ -34,12 +34,13 @@ The system includes the following major components:
    - Map game control buttons to specific FPGA pins in the `.xdc` file.
 
 ## Inputs and Outputs
-### Inputs from Nexys Board
-1. **Directional Buttons**: Used by the player to change the direction of the snake.
+Inputs:
 
-### Outputs to Nexys Board
-1. **VGA Output**: Displays the game state, including the snake and apples.
+Push Buttons/Switches: Used to control the movement of the character across the game field. For instance, each button corresponds to a direction (up, down, left, right) that allows players to maneuver the character to collect points.
+Reset Button: Resets the game to its initial state, clearing the score and repositioning the character at the starting point.
+Outputs:
 
+VGA Display: Displays the 2D game field on the screen, including the character, randomly generated points, and the current score.
 ### Project Demonstration
 #### Images
 
