@@ -1,1 +1,78 @@
 # 487-Final-Project
+
+# Project Name: Snake Game
+
+## Project Description
+This project implements a classic snake game on a Nexys board using Vivado. The game utilizes various peripherals of the Nexys board to create a fully interactive experience. The required external components include:
+- VGA Connector: To display the game on a monitor.
+- Speaker Module: To output sound effects when the snake eats an apple or the game ends.
+
+### Block Diagram / Finite State Machine Diagram
+???
+### High-Level System Description
+The system includes the following major components:
+1. **VGA Controller**: Manages the display output to the VGA monitor.
+2. **Random Number Generator**: Provides random positions for apples on the game board.
+3. **Snake Logic**: Controls the movement and growth of the snake.
+
+## Steps to Implement
+### Vivado Project Setup
+1. **Clone the Repository**: `git clone [repository link]`
+2. **Open Vivado**:
+   - Load the project file
+   - Ensure the Nexys board is properly connected.
+3. **Build and Run**:
+   - Compile the project and upload it to the Nexys board.
+   - Monitor the output on the connected VGA display.
+
+### Nexys Board
+1. **Input Configuration**: Directional buttons configured to control snake direction.
+2. **Output Configuration**: VGA output configured through the `vga_sync.vhd` module.
+3. **Constraints File Configuration**:
+   - Map game control buttons to specific FPGA pins in the `.xdc` file.
+
+## Inputs and Outputs
+### Inputs from Nexys Board
+1. **Directional Buttons**: Used by the player to change the direction of the snake.
+
+### Outputs to Nexys Board
+1. **VGA Output**: Displays the game state, including the snake and apples.
+
+### Project Demonstration
+#### Images
+
+
+#### Videos
+- 
+
+## Modifications
+### Base Code / Starter Code
+The project used basic VGA and snake logic from the starter code, which has been modified as follows:
+1. **Enhanced VGA Output**: Improved the color and refresh rates for smoother graphics.
+2. **Advanced Snake Logic**: Added features like increasing speed and multiple apples.
+
+## Summary of Process
+### Team Contributions
+-  Focused on VGA output and synchronization.
+-  Developed the snake logic and game controls.
+
+### Timeline of Work
+1. **Week 1**: Initial setup and basic VGA display.
+2. **Week 2**: Integrated snake logic and input handling.
+
+### Challenges and Solutions
+1. **Challenge**: Difficulty in synchronizing the VGA refresh rate.
+   - **Solution**: Adjusted the timing parameters in `vga_sync.vhd`.
+
+2. **Challenge**: Random number generator was not producing expected randomness.
+   - **Solution**: Modified the `rng.vhd` logic to improve randomness.
+
+## Source Code
+All source code is provided in organized `.vhd` and `.xdc` files:
+- `apple_n_snake.vhd`
+- `vga_sync.vhd`
+- `snake.vhd`
+- `rng.vhd`
+
+
+Each file is commented thoroughly to explain its function and structure.
