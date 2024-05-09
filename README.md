@@ -46,8 +46,10 @@ VGA Display: Displays the 2D game field on the screen, including the character, 
 
 
 #### Videos
-- 
-
+##### Device
+https://drive.google.com/file/d/1eKQDRKHWZ2DkjqVYu7lID2pMoXg0rC8x/view?usp=sharing
+##### Screen
+https://drive.google.com/file/d/1SSnZ8U67tuGP3ZttloGeoLAvMOxmJnI0/view?usp=sharing
 ## Modifications
 ### Base Code / Starter Code
 The project used basic VGA and snake logic from the starter code, which has been modified as follows:
