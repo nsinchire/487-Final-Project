@@ -10,7 +10,8 @@ This project implements an engaging game on the Nexys A7 FPGA board where the pl
 - Speaker Module: To output sound effects when the snake eats an apple or the game ends.
 
 ### Block Diagram / Finite State Machine Diagram
-???
+The finite state machine (FSM) governing the game's movement operates through a series of well-defined states that control the character's movement. The FSM begins in the Reset state, which initializes the game by placing the character in its starting position and setting the game to Paused mode. In this mode, the game awaits player input. Once any of the directional controls (push buttons or switches) are pressed, the FSM transitions to the corresponding movement state: Up, Down, Left, or Right, allowing the player to navigate the character across the game field. Each movement state updates the character's position accordingly, and after 30 seconds of playtime, the FSM reverts to the Paused state. This cycle continues until the player manually resets the game, which brings the FSM back to the Reset state, restarting the gameplay. The use of these clearly defined states ensures smooth character movement while providing periodic pauses to increase the game's challenge and pace.
+
 ### High-Level System Description
 The system includes the following major components:
 1. **VGA Controller**: Manages the display output to the VGA monitor.
@@ -51,10 +52,8 @@ https://drive.google.com/file/d/1eKQDRKHWZ2DkjqVYu7lID2pMoXg0rC8x/view?usp=shari
 ##### Screen
 https://drive.google.com/file/d/1SSnZ8U67tuGP3ZttloGeoLAvMOxmJnI0/view?usp=sharing
 ## Modifications
-### Base Code / Starter Code
-The project used basic VGA and snake logic from the starter code, which has been modified as follows:
-1. **Enhanced VGA Output**: Improved the color and refresh rates for smoother graphics.
-2. **Advanced Snake Logic**: Added features like increasing speed and multiple apples.
+### Pong Lab
+We got inspired for this project based on lab 6 pong game. We implemented our own system for character movement, updating the ball and bat concept. Instead of hitting a ball, players can now navigate a character around a field and gather randomly generated points. Furthermore, we expanded the functionality of the original VGA driver by including new graphical components on the game field, such as a timer, scoring display, and random point generating. In addition, we modified the Pong's original finite state machine architecture, which controlled scoring and other movement states, to allow it to support additional modes unique to this particular game, such the pause state. 
 
 ## Summary of Process
 ### Team Contributions
