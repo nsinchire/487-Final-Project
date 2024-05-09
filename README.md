@@ -3,7 +3,9 @@
 # Project Name: Snake Game
 
 ## Project Description
-This project implements a classic snake game on a Nexys board using Vivado. The game utilizes various peripherals of the Nexys board to create a fully interactive experience. The required external components include:
+This project implements an engaging game on the Nexys A7 FPGA board where the player controls a snake to collect as many points as possible within a limited time. The character, maneuvered using push buttons or switches, traverses a 2D field displayed on a VGA screen. Points are randomly generated at different locations across the game field, challenging the player to move around and collect them before the timer runs out. The system employs a finite state machine to handle the player's movements, game state, and scoring logic. An algorithm ensures that points appear in unpredictable areas. As the player accumulates points, the score is dynamically updated and displayed onscreen, providing real-time feedback on progress. The game's visual and audio feedback, coupled with the random distribution of points, ensures an exciting and immersive experience for the player.
+
+. The game utilizes various peripherals of the Nexys board to create a fully interactive experience. The required external components include:
 - VGA Connector: To display the game on a monitor.
 - Speaker Module: To output sound effects when the snake eats an apple or the game ends.
 
@@ -13,7 +15,7 @@ This project implements a classic snake game on a Nexys board using Vivado. The 
 The system includes the following major components:
 1. **VGA Controller**: Manages the display output to the VGA monitor.
 2. **Random Number Generator**: Provides random positions for apples on the game board.
-3. **Snake Logic**: Controls the movement and growth of the snake.
+3. **Snake Logic**: Controls the movement    of the snake.
 
 ## Steps to Implement
 ### Vivado Project Setup
